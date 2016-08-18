@@ -1,0 +1,53 @@
+nav {
+	text-align: center;
+	background: pink;
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	min-height: 36px;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px 30px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+section {
+	height: 600px;
+	padding: 40px;
+}
+
+.current a {
+	color: red;
+}
+
+#menu-icon {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+	nav ul {
+		display: none;
+	}
+
+	nav li {
+		display: block;
+	}
+
+	#menu-icon {
+		display: block;
+	}
+}
