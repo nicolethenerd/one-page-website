@@ -89,6 +89,10 @@ h2 {
 
 #section2 {
 	background: $color3;
+
+	li {
+		list-style-type: circle;
+	}
 }
 
 #section3 {
@@ -98,6 +102,13 @@ h2 {
 
 footer {
 	background: $color5;
+	color: white;
+	padding-bottom: 30px;
+	line-height: 2em;
+
+	a {
+		color: white;
+	}
 }
 
 #rocket {
@@ -114,10 +125,12 @@ footer {
 }
 
 .blurb {
-	text-align: center;
+	padding: 0 40px;
+	line-height: 1.3em;
 
 	div {
 		margin: 30px 0;
+		text-align: center;
 	}
 }
 

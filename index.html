@@ -20,13 +20,13 @@
 
 	<nav>
 		<ul>
-			<li class="current"><a href="#section1">Section 1</a></li>
-			<li><a href="#section2">Section 2</a></li>
-			<li><a href="#section3">Section 3</a></li>
-			<li><a href="#section4">Section 4</a></li>
+			<li class="current"><a href="#section1">Home</a></li>
+			<li><a href="#section2">Requirements</a></li>
+			<li><a href="#section3">Image Gallery</a></li>
+			<li><a href="#section4">Resources</a></li>
 		</ul>
 	</nav>
-	<button id="menu-icon">&#9776;</button>
+	<button id="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
 
 	<section id="section1" data-stellar-background-ratio="0.5">
 		<h1>One Page Websites!</h1>
@@ -37,21 +37,37 @@
 		Your one page website should include:
 		<div class="row">
 			<div class="col-sm-4 blurb">
-				<div>
-					<i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+				<div class="wow bounceInUp">
+					<i class="fa fa-bars fa-5x" aria-hidden="true"></i>
 				</div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo molestiae ullam sed sunt fugiat culpa repellat accusamus quis, similique, ut non aperiam suscipit quibusdam iste? Accusamus libero, ea nesciunt.
+				A responsive nav:
+				<ul>
+					<li>Built using the <a href="https://github.com/davist11/jQuery-One-Page-Nav"> jQuery-One-Page-Nav</a> plugin</li>
+					<li>That switches to a menu icon on smaller screens</li>
+				</ul>
 			</div>
 			<div class="col-sm-4 blurb">
-				<div>
-					<i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+				<div class="wow bounceInUp">
+					<i class="fa fa-th fa-5x" aria-hidden="true"></i>
 				</div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo molestiae ullam sed sunt fugiat culpa repellat accusamus quis, similique, ut non aperiam suscipit quibusdam iste? Accusamus libero, ea nesciunt.</div>
+			
+				Additional responsiveness (besides your nav) that:
+				<ul>
+					<li>Uses either media queries and/or the Bootstrap grid framework</li>
+					<li>Uses at least one breakpoint</li>
+					<li>For example, you could do something like the image gallery below.</li>
+				</ul>
+			</div>
 			<div class="col-sm-4 blurb">
-				<div>
-					<i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+				<div class="wow bounceInUp">
+					<i class="fa fa-plug fa-5x" aria-hidden="true"></i>
 				</div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo molestiae ullam sed sunt fugiat culpa repellat accusamus quis, similique, ut non aperiam suscipit quibusdam iste? Accusamus libero, ea nesciunt.
+				Makes use of at least one other JavaScript plugin. Some examples (feel free to choose one not on this list):
+				<ul>
+					<li>Stellar.js (parallax effect) http://markdalgleish.com/projects/stellar.js/</li>
+					<li>Fancybox (lightbox) http://fancyapps.com/fancybox/ (Links to an external site.)</li>
+					<li>bxSlider (responsive image/content slider) http://bxslider.com/</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -73,8 +89,25 @@
 		</div>
 	</section>
 	<footer>
-		<h1>Resources</h1>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium cupiditate omnis ad, delectus eveniet quisquam soluta aut perspiciatis, tempore itaque rem, aliquid ab debitis, cum fugit at dicta. Eaque, aut.
+		<div class="container">
+			<h1>Resources</h1>
+			<div class="row">
+				<div class="col-sm-4">
+					<ul>
+			            <li>Parallax Effect - <a href="http://markdalgleish.com/projects/stellar.js/" target="_blank">Stellar.js</a></li>
+			            <li>CSS Animations - <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
+			            <li>CSS Animations on Scroll - <a href="http://mynameismatthieu.com/WOW/" target="_blank">wow.js</a></li>
+			        </ul>
+				</div>
+				<div class="col-sm-4">
+					<ul>
+						<li>Icons - <a href="http://fontawesome.io">Font Awesome</a></li>
+						<li>Free Fonts - <a href="https://fonts.google.com/">Google Fonts</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
 	</footer>
 
 	<!-- <img id="rocket" src="images/rocket.png" data-stellar-ratio="2"> -->
@@ -84,6 +117,7 @@
 	<!-- Plugins -->
 	<script src="js/jquery.nav.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<!-- Your code -->
 	<script src="js/main.js"></script>
 </body>

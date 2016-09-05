@@ -22,3 +22,6 @@ $(window).resize(function() {
 
 // Add parallax (stellar.js)
 $.stellar();
+
+// Add wow.js animations
+new WOW().init();

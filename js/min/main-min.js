@@ -1,0 +1,1 @@
+$("nav").onePageNav();var menu=$("nav ul");$("#menu-icon").click(function(){menu.slideToggle()}),$(window).resize(function(){var n=$(window).width();n>768&&menu.is(":hidden")&&menu.removeAttr("style")}),$.stellar(),(new WOW).init();
