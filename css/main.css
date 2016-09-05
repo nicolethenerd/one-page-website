@@ -1,53 +1,102 @@
+/*
+Color palette generated at coolors.co
+*/
+html, body {
+  height: 100%; }
+
+body {
+  font-family: Montserrat, sans-serif; }
+
 nav {
-	text-align: center;
-	background: pink;
-
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-
-	min-height: 36px;
-}
+  text-align: center;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 36px;
+  z-index: 1; }
 
 nav li {
-	display: inline-block;
-	list-style: none;
-	padding: 10px 30px;
-}
+  display: inline-block;
+  list-style: none;
+  padding: 10px 30px; }
 
 nav a {
-	text-decoration: none;
-}
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 section {
-	height: 600px;
-	padding: 40px;
-}
+  min-height: 400px;
+  padding: 40px;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .current a {
-	color: red;
-}
+  color: #17bebb; }
 
 #menu-icon {
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-}
+  display: none;
+  position: fixed;
+  top: -2px;
+  right: 0;
+  border-width: 0;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2; }
+
+h1, h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 60px;
+  padding: 30px 0; }
+
+h2 {
+  font-size: 32px;
+  margin-top: 10px; }
+
+#section1 {
+  background-image: url(../images/black-and-white-man-person-hands.jpg);
+  min-height: 100%;
+  padding-top: 200px; }
+
+#section2 {
+  background: #d4f4dd; }
+
+#section3 {
+  background: #d62246;
+  height: auto; }
+
+footer {
+  background: #4b1d3f; }
+
+#rocket {
+  position: fixed;
+  bottom: -1000px;
+  left: 0;
+  width: 100px; }
+
+.thumb {
+  text-align: center;
+  margin: 10px 0; }
+
+.blurb {
+  text-align: center; }
+  .blurb div {
+    margin: 30px 0; }
 
 /* Mobile layout */
 @media (max-width: 768px) {
+  nav ul {
+    display: none; }
 
-	nav ul {
-		display: none;
-	}
+  nav li {
+    display: block; }
 
-	nav li {
-		display: block;
-	}
-
-	#menu-icon {
-		display: block;
-	}
-}
+  #menu-icon {
+    display: block; } }

@@ -1,13 +1,15 @@
+// Set up the nav scrolling effect
 $("nav").onePageNav();
 
 var menu = $("nav ul");
 
+// Toggle the menu when clicked
 $("#menu-icon").click(function() {
-	// Toggle the menu
 	menu.slideToggle();
 });
 
-// when I resize the window
+// Fix bug where menu disappears if you open and close it on a small screen
+// When I resize the window
 $(window).resize(function() {
 	var width = $(window).width();
 
@@ -17,3 +19,6 @@ $(window).resize(function() {
 	}
 
 });
+
+// Add parallax (stellar.js)
+$.stellar();

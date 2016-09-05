@@ -1,0 +1,138 @@
+/*
+Color palette generated at coolors.co
+*/
+$color1: rgba(14, 124, 123, 1);
+$color2: rgba(23, 190, 187, 1);
+$color3: rgba(212, 244, 221, 1);
+$color4: rgba(214, 34, 70, 1);
+$color5: rgba(75, 29, 63, 1);
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+}
+
+nav {
+	text-align: center;
+	background: white;
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	min-height: 36px;
+	z-index: 1;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px 30px;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+section {
+	min-height: 400px;
+	padding: 40px;
+
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.current a {
+	color: $color2;
+}
+
+#menu-icon {
+	display: none;
+	position: fixed;
+	top: -2px;
+	right: 0;
+	
+	border-width: 0;
+	background: transparent;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+h1, h2 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1 {
+    font-size: 60px;
+    padding: 30px 0;
+}
+
+h2 {
+	font-size: 32px;
+	margin-top: 10px;
+}
+
+#section1 {
+	background-image: url(../images/black-and-white-man-person-hands.jpg);
+	min-height: 100%;
+	padding-top: 200px;
+}
+
+#section2 {
+	background: $color3;
+}
+
+#section3 {
+	background: $color4;
+	height: auto;
+}
+
+footer {
+	background: $color5;
+}
+
+#rocket {
+	position: fixed;
+	bottom: -1000px;
+	left: 0;
+
+	width: 100px;
+}
+
+.thumb {
+	text-align: center;
+	margin: 10px 0;
+}
+
+.blurb {
+	text-align: center;
+
+	div {
+		margin: 30px 0;
+	}
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+	nav ul {
+		display: none;
+	}
+
+	nav li {
+		display: block;
+	}
+
+	#menu-icon {
+		display: block;
+	}
+}
